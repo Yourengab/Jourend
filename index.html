@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jourend</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" />
   </head>
   <body>
     <div class="home">
@@ -44,21 +46,60 @@
       </ul>
     </div>
     <div class="photo">
-      <div class="photo-wrapper">
-        <div class="content">
-          <img src="img/bg/bg3.png" />
-          <div class="text">
-            <h2>Our Photography</h2>
-            <p>
-              We also give you the amazing shot of your amazing experience with us <br />
-              and its free!
-            </p>
-            <a href="">
-              <button>See Gallery</button>
-            </a>
-          </div>
+      <div class="content">
+        <img src="img/bg/bg3.png" />
+        <div class="text-photo">
+          <h2>Our Photography</h2>
+          <p>
+            We also give you the amazing shot of your amazing experience with us <br />
+            and its free!
+          </p>
+          <a href="#gallery">
+            <button class="btn btn1">See Gallery</button>
+          </a>
         </div>
       </div>
     </div>
+    <div class="gallery" id="gallery">
+      <h1>Our Gallery</h1>
+      <div class="gallery-img">
+        <!-- <img src="img/gallery/img1.png" />
+        <img src="img/gallery/img2.png" />
+        <img src="img/gallery/img3.png" />
+        <img src="img/gallery/img4.png" />
+        <img src="img/gallery/img5.png" />
+        <img src="img/gallery/img6.png" />
+        <img src="img/gallery/img7.png" />
+        <img src="img/gallery/img8.png" /> -->
+        <a href="img//gallery/img1.png">
+          <img src="img/gallery/img1.png" />
+        </a>
+        <a href="img//gallery/img2.png">
+          <img src="img/gallery/img2.png" />
+        </a>
+        <a href="img//gallery/img3.png">
+          <img src="img/gallery/img3.png" />
+        </a>
+        <a href="img//gallery/img4.png">
+          <img src="img/gallery/img4.png" />
+        </a>
+        <a href="img//gallery/img5.png">
+          <img src="img/gallery/img5.png" />
+        </a>
+        <a href="img//gallery/img6.png">
+          <img src="img/gallery/img6.png" />
+        </a>
+        <a href="img//gallery/img7.png">
+          <img src="img/gallery/img7.png" />
+        </a>
+        <a href="img//gallery/img8.png">
+          <img src="img/gallery/img8.png" />
+        </a>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script>
+      lightGallery(document.querySelector(".gallery-img"));
+    </script>
   </body>
 </html>

@@ -126,40 +126,60 @@ html {
   width: 100%;
   background-size: cover;
 }
-.photo-wrapper {
-  background: white;
-  height: 90vh;
-  width: 70%;
-  top: 5.2%;
-  left: 15%;
-  border-radius: 20px;
-  position: relative;
-}
+
 .content {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 .content img {
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 20px;
+  height: 400px;
 }
-.text {
+.text-photo {
+  margin-left: 50px;
   font-size: 3vmin;
-  text-align: center;
   font-family: "Poppins";
-  margin-top: -100px;
+  width: 30%;
+  color: white;
+  text-shadow: 13px 4px 5px rgba(255, 255, 255, 0.25);
 }
-.text button {
+.btn {
+  font-family: "Poppins";
   margin-top: 20px;
-  width: 170px;
-  height: 50px;
+  width: 150px;
+  height: 40px;
+  border: white 2px solid;
+  color: white;
   background: transparent;
-  border: 2px solid #827d7d;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
   border-radius: 10px;
+}
+.gallery {
+  text-align: center;
+  font-family: "Headland One";
+  letter-spacing: 5px;
+  padding: 200px 50px 0 50px;
+}
+.gallery-img {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+}
+.gallery-img a {
+  overflow: hidden;
+}
+.gallery-img a img {
+  width: 100%;
+  object-fit: cover;
+  transition: 500ms ease-in-out;
+}
+.gallery a img:hover {
+  transform: scale(1.1);
 }
 @media screen and (max-width: 480px) {
   .image-wrapper {
@@ -168,5 +188,29 @@ html {
 
   .img2 {
     padding-top: 30%;
+  }
+  .content img {
+    width: 30vh;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .text-photo {
+    margin: 50px 0 0 0;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+  }
+  .gallery {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .gallery-img {
+    grid-template-columns: 1fr;
+    grid-template-rows: inherit;
+    grid-gap: 15px;
   }
 }
