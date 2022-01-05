@@ -71,8 +71,8 @@ html {
 }
 .about {
   display: flex;
-  padding-top: 25%;
-  padding-bottom: 20%;
+  padding-top: 100px;
+  padding-bottom: 10%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -178,7 +178,7 @@ html {
   transition: 500ms ease-in-out;
 }
 .gallery a img:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 #bundle {
   text-align: center;
@@ -212,7 +212,7 @@ html {
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
-
+  border-radius: 5px;
   transition: 300ms ease-in-out;
 }
 .container .bundle:hover {
