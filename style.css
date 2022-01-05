@@ -216,7 +216,7 @@ html {
   transition: 300ms ease-in-out;
 }
 .container .bundle:hover {
-  height: 420px;
+  height: 480px;
 }
 .container .bundle .imgBx {
   position: relative;
@@ -262,6 +262,17 @@ html {
   }
 }
 
+@media screen and (max-width: 385px) {
+  .container .bundle {
+    transform: scale(0.9);
+  }
+  .container .bundle {
+    max-width: 280px;
+  }
+  .container .bundle .imgBx {
+    left: -5px;
+  }
+}
 @media screen and (max-width: 768px) {
   .content {
     flex-direction: column;
