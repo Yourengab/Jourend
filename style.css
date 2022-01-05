@@ -16,7 +16,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 .home h1 {
   color: white;
@@ -32,7 +31,7 @@ html {
   margin-right: auto;
   left: 0;
   right: 0;
-  bottom: 25px;
+  bottom: 50px;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -181,19 +180,88 @@ html {
 .gallery a img:hover {
   transform: scale(1.1);
 }
+#bundle {
+  text-align: center;
+  font-family: "Headland One";
+  padding-top: 100px;
+}
+.bundle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+
+  font-family: "Poppins";
+}
+.container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.container .bundle {
+  position: relative;
+  max-width: 360px;
+  height: 320px;
+  background-color: #343434;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+
+  transition: 300ms ease-in-out;
+}
+.container .bundle:hover {
+  height: 420px;
+}
+.container .bundle .imgBx {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -65px;
+  left: 35px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.container .bundle .imgBx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+.container .bundle .box-text {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 300ms ease-in-out;
+  color: white;
+}
+.container .bundle:hover .box-text {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 200ms ease;
+}
 @media screen and (max-width: 480px) {
   .image-wrapper {
     grid-template-columns: 1fr;
-  }
-
-  .img2 {
-    padding-top: 30%;
   }
   .content img {
     width: 30vh;
     height: auto;
   }
+  .container .bundle {
+    max-width: 300px;
+  }
+  .container .bundle .imgBx {
+    left: 5px;
+  }
 }
+
 @media screen and (max-width: 768px) {
   .content {
     flex-direction: column;
