@@ -334,6 +334,7 @@ html {
   font-family: "Poppins";
   text-align: center;
   letter-spacing: 5px;
+  padding: 0 20px 0 20px;
 }
 .footer .copyright i:hover {
   color: red;
