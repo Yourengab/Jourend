@@ -246,6 +246,98 @@ html {
   margin-top: -40px;
   transition-delay: 200ms ease;
 }
+.testi-wrapper {
+  border-top: 65px solid #c4c4c4;
+  padding-top: 100px;
+  margin-top: 400px;
+  background-color: #e3e3e3;
+}
+.testi-wrapper h2 {
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: "Headland One";
+}
+.testi {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 400px;
+  flex-wrap: wrap;
+}
+.testi-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 320px;
+  height: 410px;
+  background-color: #474747;
+  border-radius: 10px;
+  box-shadow: 0px 23px 23px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 20px;
+  transform-style: preserve-3d;
+}
+.testi-box img {
+  transform: translateZ(20px);
+}
+.testi-box p {
+  margin-bottom: 50px;
+}
+.testi-box h4 {
+  margin-top: 20px;
+}
+.footer {
+  background-color: #131313;
+  padding-bottom: 20px;
+}
+.footer-gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  overflow: hidden;
+}
+.footer-gallery img {
+  width: 101%;
+}
+.footer-content {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-content img {
+  width: 98px;
+  height: 180px;
+}
+.footer .icon {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.footer .icon a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  padding: 0 20px 0 20px;
+  transition: 300ms ease-in-out;
+}
+.footer .icon:hover a {
+  transform: translateY(-5px);
+}
+.footer .copyright {
+  margin-top: 100px;
+  color: white;
+  font-family: "Poppins";
+  text-align: center;
+  letter-spacing: 5px;
+}
+.footer .copyright i:hover {
+  color: red;
+}
 @media screen and (max-width: 480px) {
   .image-wrapper {
     grid-template-columns: 1fr;
@@ -271,6 +363,10 @@ html {
   }
   .container .bundle .imgBx {
     left: -5px;
+  }
+  .testi-box {
+    transform: scale(0.9);
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 768px) {

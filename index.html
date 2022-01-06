@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="style.css" />
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
   </head>
   <body>
     <div class="home">
       <div class="text">
-        <h1>Jourend</h1>
+        <h1 data-aos="fade-down" data-aos-duration="1000">Jourend</h1>
       </div>
       <a href="#about">
         <div class="scroll"></div>
@@ -21,8 +25,8 @@
     <!-- End Home -->
     <div class="about" id="about">
       <img src="img/logo/logo.png" />
-      <h1>THE BEST TRAVEL BUDDY</h1>
-      <p>We make sure that you have the best experience in traveling with us with ot of experience in our field we making sure that you are satisfied.</p>
+      <h1 data-aos="fade-up" data-aos-duration="500">THE BEST TRAVEL BUDDY</h1>
+      <p data-aos="fade-in" data-aos-duration="1000">We make sure that you have the best experience in traveling with us with lot of experience in our field we making sure that you are satisfied.</p>
     </div>
     <div class="team">
       <div class="image-wrapper">
@@ -124,9 +128,62 @@
         </div>
       </div>
     </section>
+    <section class="testi-wrapper" id="testi">
+      <h2>Testimonials</h2>
+      <div class="testi">
+        <div class="testi-box">
+          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat ex, consequuntur magnam fugit Distinc."</p>
+          <img src="img/testi/testi1.png" />
+          <h4>Hailee Stanfield</h4>
+        </div>
+        <div class="testi-box">
+          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat ex, consequuntur magnam fugit Distinc."</p>
+          <img src="img/testi/testi2.png" />
+          <h4>Jhon Beacon</h4>
+        </div>
+        <div class="testi-box">
+          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat ex, consequuntur magnam fugit Distinc."</p>
+          <img src="img/testi/testi3.png" />
+          <h4>Jhon Deacon</h4>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="footer-gallery">
+        <img src="img/footer/footer1.png" />
+        <img src="img/footer/footer2.png" />
+        <img src="img/footer/footer3.png" />
+        <img src="img/footer/footer4.png" />
+        <img src="img/footer/footer5.png" />
+        <img src="img/footer/footer6.png" />
+        <img src="img/footer/footer7.png" />
+      </div>
+      <div class="footer-content">
+        <img src="img/logo/logo2.png" />
+      </div>
+      <div class="icon">
+        <a href=""><i class="bi bi-youtube"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-twitter"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+      </div>
+      <p class="copyright">Made With <i class="bi bi-heart-fill"></i> By Suryadana&copy</p>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
     <script>
       lightGallery(document.querySelector(".gallery-img"));
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".testi-box"), {
+        max: 25,
+        speed: 400,
+        scale: 1.1,
+      });
     </script>
   </body>
 </html>
