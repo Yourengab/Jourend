@@ -99,9 +99,6 @@ html {
   transition: 1s ease-in-out;
 }
 
-.image-wrapper img:hover {
-  opacity: 0.9;
-}
 .social-media {
   padding: 10px 0 10px 0;
 }
@@ -260,7 +257,7 @@ html {
 .testi {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 400px;
+  padding-bottom: 200px;
   flex-wrap: wrap;
 }
 .testi-box {
@@ -333,7 +330,7 @@ html {
   color: white;
   font-family: "Poppins";
   text-align: center;
-  letter-spacing: 5px;
+
   padding: 0 20px 0 20px;
 }
 .footer .copyright i:hover {
